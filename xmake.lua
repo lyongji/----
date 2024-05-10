@@ -1,9 +1,9 @@
 add_rules("mode.debug", "mode.release")
 
-set_encodings("utf-8")
+
 set_languages("c++20")
 set_project("设计模式")
-
+set_encodings("utf-8")
 
 target("1.简单工厂")
     set_kind("binary")
@@ -12,6 +12,9 @@ target("1.简单工厂")
 target("2.工厂方法")
     set_kind("binary")
     add_files("src/2.工厂方法/*.cpp")
+target("3.抽象工厂")
+    set_kind("binary")
+    add_files("src/3.抽象工厂/*.cpp")
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
